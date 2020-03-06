@@ -1,0 +1,67 @@
+<!doctype html>
+
+<style>
+
+.number {
+	font-size: 50px;
+}
+
+.label {
+	display: flex;
+	font-size: 30px
+}
+
+.bucket {
+	display: flex;
+	justify-content: center;
+	width: 100px;
+	border: 5px solid black;
+	padding: 100px;
+}
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+    $( function() {
+    $( "#draggable2" ).draggable();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="draggable" class="ui-widget-content number">
+  <p>\(\sqrt{2}\)</p>
+</div>
+ 
+ <div id="draggable2" class="ui-widget-content number">
+  <p>\(\sqrt{4}\)</p>
+</div>
+ 
+ <div>
+	<div class="label"> Rational </div>
+	<div class="bucket"></div>
+</div>
+ <div>
+	<div class="label"> Irrational</div>
+	<div class="bucket"></div>
+</div>
+</body>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+</html>
