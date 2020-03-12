@@ -6,6 +6,15 @@
 	font-size: 50px;
 }
 
+.centerIt{
+	justify-content: center;
+	}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .label {
 	display: flex;
 	font-size: 30px
@@ -33,30 +42,68 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $( function() {
-    $( "#draggable" ).draggable();
+    $( "#draggable1" ).draggable();
   } );
     $( function() {
     $( "#draggable2" ).draggable();
   } );
+      $( function() {
+    $( "#draggable3" ).draggable();
+  } );
+      $( function() {
+    $( "#draggable4" ).draggable();
+  } );
+      $( function() {
+    $( "#draggable5" ).draggable();
+  } );
+      $( function() {
+    $( "#draggable6" ).draggable();
+  } );
   </script>
 </head>
 <body>
+
+<div class="container">
+
+
  
-<div id="draggable" class="ui-widget-content number">
-  <p>\(\sqrt{2}\)</p>
+ <div id="draggable1" class="ui-widget-content number">
+  <p>\(\pi\)&nbsp&nbsp&nbsp</p>
 </div>
+ 
  
  <div id="draggable2" class="ui-widget-content number">
-  <p>\(\sqrt{4}\)</p>
+  <p>\(\sqrt{16}\)&nbsp&nbsp&nbsp</p>
 </div>
- 
+
+ <div id="draggable3" class="ui-widget-content number">
+  <p>\(\frac{\pi}{\pi}\)&nbsp&nbsp&nbsp</p>
+</div>
+
+ <div id="draggable4" class="ui-widget-content number">
+  <p>\(\frac{1}{19}\)&nbsp&nbsp&nbsp</p>
+</div>
+
+ <div id="draggable5" class="ui-widget-content number">
+  <p>\(\sqrt{42}\)&nbsp&nbsp&nbsp</p>
+</div>
+
+ <div id="draggable6" class="ui-widget-content number">
+  <p>\(0.\dot3\)&nbsp&nbsp&nbsp</p>
+</div>
+ </div>
+ <div class="container">
  <div>
-	<div class="label"> Rational </div>
+	<div class="label centerIt"> Rational </div>
 	<div class="bucket"></div>
 </div>
+<div>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</div>
  <div>
-	<div class="label"> Irrational</div>
+	<div class="label centerIt"> Irrational</div>
 	<div class="bucket"></div>
+</div>
 </div>
 </body>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
